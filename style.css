@@ -1,0 +1,56 @@
+#main {
+    background-image: url(001.jpg);
+    width: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    top: 0;
+    bottom: 0;
+}
+
+.round {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    background-color: yellow;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+    border: 1px solid #8B89E5;
+    text-decoration-line: none !important;
+    cursor: pointer;
+}
+
+.popup {
+    zoom: 1.0;
+    position: relative;
+    text-decoration: none;
+}
+
+.popup span {
+    position: fixed;
+    top: 78%;
+    width: 1000px;
+    padding: 10px;
+    border-radius: 10px;
+    left: -999em;
+    z-index: 990;
+    background-color: #595957;
+}
+
+.popup:hover {
+    visibility: visible
+}
+
+.popup:hover span {
+    left: 0;
+    width: 100%;
+}
+
+* html .popup span {
+    position: absolute;
+}
